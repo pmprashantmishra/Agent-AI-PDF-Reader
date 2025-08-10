@@ -3,15 +3,6 @@ public with sharing class ExtractionResponse {
     public UsageMetadata usageMetadata;
     public String modelVersion;
     public String responseId;
-    
-    /* public List<Response> responses;
-
-    public class Response {
-        public List<Candidate> candidates;
-        public UsageMetadata usageMetadata;
-        public String modelVersion;
-        public String responseId;
-    } */
 
     public class Candidate {
         public Content content;

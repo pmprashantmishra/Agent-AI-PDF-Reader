@@ -1,5 +1,5 @@
 public with sharing class ExtractPdfCallout {
-    public static final String API_KEY = 'AIzaSyClLSpFaFUaPbyf0cLMMKmCKufifP70JAw';
+    public static final String API_KEY = 'API KEY FROM AI STUDIO';
     // Method to perform the HTTP callout
     public static String makeCallout(String base64File) {
         // Create a new HTTP request
