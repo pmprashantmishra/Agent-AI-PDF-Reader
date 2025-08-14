@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_givesummar0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_givesummar0</masterLabel>
+        <utterance>Give Summary on attached doc on this case</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_whatisthei1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_whatisthei1</masterLabel>
+        <utterance>what is the invoice number in attached pdf</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_whatisthen2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_whatisthen2</masterLabel>
+        <utterance>what is the new address customer requested for in attachment</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>This topic provides detailed information from documents attached to a case when the user requests details about the case object. The extracted information is stored in the PDF_Summary__c field on the case.</description>
+    <developerName>Document_Summary</developerName>
+    <genAiFunctions>
+        <functionName>Get_PDF_JSON</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>When user ask about any information related to attachment or pdf on case. extracted information is sorted in &quot;PDF_Summary__c&apos; field on case. use the case ID and pass it in action as recordID and it will return the JSON from this field that you have to analyze and provide response based on your analysis.</description>
+        <developerName>instruction_whenuseras0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuseras0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When user ask about information from attached pdf on case use &quot;Get PDF JSON&quot; Action and provide response based on JSON after analyzing all the details from JSON</description>
+        <developerName>instruction_whenuseras1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuseras1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When user ask any particular information then use the JSON and check for specific information from that JSON and give response</description>
+        <developerName>instruction_whenuseras2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenuseras2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Document Summary</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>your job is only to analyze the PDF_Summary__c field on case record it stores the extracted JSON from a document, And provide information in response</scope>
+</GenAiPlugin>

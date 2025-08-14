@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action will return &quot;PDF_Summary__c&quot; field from case object which contains the extracted JSON from attached document on case. use case record id to send in action.
+use it when user asks from any information from attached document or attached pdf. analyze returned JSON from Flow and provide response based on user question. if user ask information for a particular area from the pdf like old address, new address or any other specific area you need to provide clear response on it after analyzing the JSON received from flow.</description>
+    <invocationTarget>Get_Doc_JSON_on_Case</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get PDF JSON</masterLabel>
+    <progressIndicatorMessage>Analyzing attached document</progressIndicatorMessage>
+</GenAiFunction>
